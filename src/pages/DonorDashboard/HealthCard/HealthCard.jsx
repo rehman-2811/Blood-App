@@ -1,4 +1,4 @@
-import styles from "./Healthcard.module.css";
+import styles from "./HealthCard.module.css";
 
 export default function HealthCard({ donor }) {
   const rows = [
