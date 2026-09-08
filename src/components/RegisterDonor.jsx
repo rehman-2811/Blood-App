@@ -70,7 +70,7 @@ const RegisterDonor = () => {
     setError(null);
     
     try {
-      const otpResponse = await axios.post('https://qr-server-2918.onrender.com/api/auth/send-registration-otp', {
+      const otpResponse = await axios.post('https://qr-server-29l8.onrender.com/api/auth/send-registration-otp', {
         phone: formData.phone,
         email: formData.email
       });
@@ -109,7 +109,7 @@ const RegisterDonor = () => {
         agreedToTerms: donorDataRaw.agreedToTerms === true
       };
 
-      const response = await axios.post('https://qr-server-2918.onrender.com/api/auth/verify-registration-otp', {
+      const response = await axios.post('https://qr-server-29l8.onrender.com/api/auth/verify-registration-otp', {
         phone: formData.phone,
         email: formData.email,
         otp,
@@ -135,7 +135,7 @@ const RegisterDonor = () => {
     setError(null);
     
     try {
-      await axios.post('https://qr-server-2918.onrender.com/api/auth/send-registration-otp', {
+      await axios.post('https://qr-server-29l8.onrender.com/api/auth/send-registration-otp', {
         phone: formData.phone,
         email: formData.email
       });
