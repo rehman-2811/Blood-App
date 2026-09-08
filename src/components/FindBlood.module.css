@@ -1,0 +1,388 @@
+/* ── Page wrapper ── */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #efefef;
+  padding: 80px 20px 80px;
+}
+
+/* ── Search card ── */
+.card {
+  width: 100%;
+  max-width: 1000px;
+  background: #f8f8f8;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.left {
+  width: 45%;
+  background: linear-gradient(135deg, #6e002b, #c2173d);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.leftTitle {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.leftSub {
+  font-size: 14px;
+  opacity: 0.85;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.right {
+  width: 55%;
+  padding: 40px 60px;
+  background: #f8f8f8;
+}
+
+.right h2 {
+  margin: 0 0 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ── Form fields ── */
+.formGroup {
+  margin-bottom: 22px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.formGroup select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #111827;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.formGroup select:focus {
+  border-color: #9f1239;
+}
+
+.locationBtn {
+  width: 100%;
+  padding: 12px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.locationBtn:hover { background: #374151; }
+.locationBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.orText {
+  text-align: center;
+  margin: 14px 0;
+  color: #888;
+  font-size: 13px;
+}
+
+.proceedRow {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.proceedBtn {
+  padding: 12px 28px;
+  background: #9f1239;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.proceedBtn:hover { background: #7f1d1d; }
+.proceedBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* ── Results section ── */
+.resultsSection {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+  animation: slideDown 0.35s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.resultsTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.resultsMeta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ── No results ── */
+.noResults {
+  background: #fff;
+  border-radius: 12px;
+  padding: 48px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.noResultsIcon { font-size: 40px; margin-bottom: 12px; }
+.noResultsText { color: #6b7280; font-size: 15px; margin: 0; }
+
+/* ── Org result card ── */
+.orgCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: box-shadow 0.2s;
+}
+
+.orgCard:hover {
+  box-shadow: 0 4px 20px rgba(159, 18, 57, 0.12);
+}
+
+.orgLeft { flex: 1; min-width: 200px; }
+
+.orgName {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.orgAddress {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Blood availability pills ── */
+.bloodPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.bloodPill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pillHighlight {
+  background: #fce7f3;
+  color: #9f1239;
+  border: 1.5px solid #f9a8d4;
+}
+
+.pillNormal {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1.5px solid #e5e7eb;
+}
+
+.pillDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.searchModeToggle {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px auto;
+  max-width: 400px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.modeBtn,
+.modeActive {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modeBtn {
+  background: transparent;
+  color: #6b7280;
+}
+
+.modeActive {
+  background: #9f1239;
+  color: white;
+  font-weight: 600;
+}
+
+/* ── Contact buttons ── */
+.orgRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  min-width: 160px;
+}
+
+.totalBadge {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: right;
+}
+
+.totalNum {
+  font-size: 22px;
+  font-weight: 800;
+  color: #9f1239;
+  display: block;
+  line-height: 1;
+}
+
+.contactBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.callBtn {
+  padding: 9px 18px;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.callBtn:hover { background: #374151; }
+
+.whatsappBtn {
+  padding: 9px 18px;
+  border-radius: 8px;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.whatsappBtn:hover { background: #15803d; }
+
+/* ── Loading spinner ── */
+.spinner {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.spinnerDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #9f1239;
+  margin: 0 4px;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.spinnerDot:nth-child(2) { animation-delay: 0.2s; }
+.spinnerDot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  from { transform: translateY(0); opacity: 0.4; }
+  to   { transform: translateY(-12px); opacity: 1; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .card { flex-direction: column; }
+  .left { width: 100%; padding: 30px; min-height: 140px; }
+  .right { width: 100%; padding: 30px; box-sizing: border-box; }
+  .orgCard { flex-direction: column; }
+  .orgRight { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+}

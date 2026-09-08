@@ -1,0 +1,155 @@
+.page {
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+}
+
+.body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ── Nav ── */
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 14px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  /* gap: 24px; */
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #9f1239;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notifIcon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #9f1239;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.logoutBtn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+ 
+.logoutBtn:hover {
+  background: #9f1239;
+  color: #fff;
+  border-color: #9f1239;
+}
+.locationCard {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.locationCard h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.locationText {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.editLocationBtn {
+  background: #9f1239;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.locationStatus {
+  font-size: 13px;
+  margin-top: 8px;
+  color: #15803d;
+}

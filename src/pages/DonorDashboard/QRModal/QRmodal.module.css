@@ -1,0 +1,77 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 36px;
+  text-align: center;
+  max-width: 340px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.canvas {
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+.eligBadge {
+  display: inline-block;
+  padding: 5px 16px;
+  border-radius: 99px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 4px 0 10px;
+}
+
+.eligible {
+  background: #14532d;
+}
+
+.notEligible {
+  background: #7f1d1d;
+}
+
+.note {
+  font-size: 11px;
+  color: #9ca3af;
+  margin: 0 0 16px;
+}
+
+.closeBtn {
+  padding: 9px 28px;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.closeBtn:hover {
+  background: #374151;
+}

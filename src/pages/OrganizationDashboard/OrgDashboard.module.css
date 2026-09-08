@@ -1,0 +1,289 @@
+.page {
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+}
+
+/* ── Nav ── */
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 14px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  /* gap: 24px; */
+  justify-content: space-between;
+}
+.logo { cursor: pointer; }
+.navLinks { display: flex; gap: 32px; flex: 1; justify-content: center; }
+.navLink { text-decoration: none; color: #374151; font-size: 15px; font-weight: 500; transition: color 0.2s; }
+.navLink:hover { color: #9f1239; }
+.navRight { display: flex; align-items: center; gap: 16px; }
+.avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #9f1239; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 13px;
+}
+.logoutBtn {
+  padding: 7px 16px; border-radius: 8px;
+  border: 1px solid #e5e7eb; background: #fff;
+  cursor: pointer; font-size: 13px; color: #374151;
+  transition: background 0.2s;
+}
+.logoutBtn:hover { background: #f3f4f6; }
+
+/* ── Body ── */
+.body { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+
+/* ── Org header card ── */
+.orgCard {
+  background: linear-gradient(135deg, #450a0a, #9f1239);
+  border-radius: 16px;
+  padding: 28px 32px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.orgName { margin: 0; font-size: 26px; font-weight: 800; }
+.orgMeta { margin: 6px 0 0; font-size: 14px; opacity: 0.85; }
+.codeBadge {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: 14px 22px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+.codeLabel { font-size: 11px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
+.codeValue { font-size: 28px; font-weight: 900; letter-spacing: 6px; margin-top: 4px; }
+.codeHint { font-size: 11px; opacity: 0.7; margin-top: 4px; }
+
+/* ── Stats row ── */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.statCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+.statNum { font-size: 32px; font-weight: 800; color: #111827; margin: 0; }
+.statLabel { font-size: 13px; color: #6b7280; margin: 4px 0 0; }
+.statEligible { color: #16a34a; }
+.statNot { color: #dc2626; }
+
+/* ── Two-col grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* ── Generic card ── */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3f4f6;
+}
+.cardTitle { margin: 0; font-size: 16px; font-weight: 700; }
+
+/* ── Search bar ── */
+.searchBar {
+  width: 100%;
+  padding: 9px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.searchBar:focus { border-color: #9f1239; }
+
+/* ── Donor table ── */
+.table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.th {
+  text-align: left; color: #6b7280; font-weight: 600;
+  padding-bottom: 8px; border-bottom: 1px solid #e5e7eb;
+  padding-right: 8px;
+}
+.td { padding: 10px 8px 10px 0; border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+.pill {
+  display: inline-block; padding: 2px 10px;
+  border-radius: 99px; font-size: 11px; font-weight: 600; color: #fff;
+}
+.pillGreen { background: #16a34a; }
+.pillRed   { background: #dc2626; }
+.pillBlue  { background: #2563eb; }
+
+.viewBtn {
+  padding: 4px 12px; border-radius: 6px;
+  border: 1px solid #e5e7eb; background: #fff;
+  cursor: pointer; font-size: 12px; color: #374151;
+  transition: background 0.15s;
+}
+.viewBtn:hover { background: #f3f4f6; }
+
+/* ── Blood group chart ── */
+.bgRow {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 10px;
+}
+.bgLabel { width: 40px; font-weight: 700; font-size: 13px; color: #111827; }
+.bgBar { flex: 1; height: 10px; border-radius: 99px; background: #f3f4f6; overflow: hidden; }
+.bgFill { height: 100%; border-radius: 99px; background: #9f1239; transition: width 0.4s; }
+.bgCount { font-size: 12px; color: #6b7280; width: 24px; text-align: right; }
+
+/* ── Recent donations ── */
+.donorDetailRow {
+  display: flex; flex-direction: column; gap: 8px;
+}
+.donationEntry {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 14px; border-radius: 10px; background: #f9fafb;
+  font-size: 13px;
+}
+.deName { font-weight: 600; color: #111827; }
+.deMeta { color: #6b7280; margin-top: 2px; font-size: 12px; }
+.deUnits { font-weight: 700; color: #9f1239; font-size: 15px; }
+
+/* ── Record donation modal ── */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999;
+}
+.modal {
+  background: #fff; border-radius: 16px;
+  padding: 32px 36px; width: 90%; max-width: 440px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+.modalTitle { margin: 0 0 20px; font-size: 18px; font-weight: 700; }
+.modalField { display: flex; flex-direction: column; margin-bottom: 16px; }
+.modalLabel { font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 5px; }
+.modalInput {
+  padding: 9px 12px; border-radius: 8px;
+  border: 1px solid #d1d5db; font-size: 14px;
+  outline: none; font-family: inherit;
+  transition: border-color 0.2s;
+}
+.modalInput:focus { border-color: #9f1239; }
+.modalBtns { display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px; }
+.modalCancel {
+  padding: 9px 20px; border-radius: 8px;
+  border: 1px solid #d1d5db; background: #fff;
+  cursor: pointer; font-size: 14px; color: #374151;
+}
+.modalSave {
+  padding: 9px 22px; border-radius: 8px;
+  border: none; background: #9f1239;
+  color: #fff; font-weight: 700; cursor: pointer; font-size: 14px;
+}
+.modalSave:disabled { opacity: 0.6; cursor: not-allowed; }
+.modalError { color: #dc2626; font-size: 13px; margin-bottom: 10px; }
+.modalSuccess { color: #16a34a; font-size: 13px; margin-bottom: 10px; }
+
+/* ── Donor detail panel ── */
+.detailPanel {
+  background: #fff; border-radius: 14px;
+  padding: 24px 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+.detailHeader { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.detailAvatar {
+  width: 54px; height: 54px; border-radius: 50%;
+  background: linear-gradient(135deg, #9f1239, #450a0a);
+  color: #fff; display: flex; align-items: center;
+  justify-content: center; font-size: 20px; font-weight: 800;
+}
+.detailName { font-size: 20px; font-weight: 700; margin: 0; }
+.detailBG { font-size: 13px; color: #6b7280; margin: 3px 0 0; }
+.detailRow {
+  display: flex; justify-content: space-between;
+  padding: 8px 0; border-bottom: 1px solid #f9fafb; font-size: 14px;
+}
+.detailLabel { color: #6b7280; font-weight: 500; }
+.detailValue { color: #111827; font-weight: 500; }
+.flagged { color: #dc2626; font-weight: 600; }
+.backBtn {
+  padding: 7px 16px; border-radius: 8px;
+  border: 1px solid #e5e7eb; background: #fff;
+  cursor: pointer; font-size: 13px; margin-bottom: 18px;
+  color: #374151; transition: background 0.15s;
+}
+.backBtn:hover { background: #f3f4f6; }
+
+.recordBtn {
+  width: 100%; margin-top: 18px;
+  padding: 11px; border-radius: 10px;
+  border: none; background: #9f1239;
+  color: #fff; font-weight: 700; font-size: 15px;
+  cursor: pointer; transition: background 0.2s;
+}
+.recordBtn:hover { background: #7f1d1d; }
+
+.empty { color: #6b7280; font-size: 14px; }
+.center { display: flex; align-items: center; justify-content: center; height: 100vh; font-size: 18px; color: #6b7280; }
+
+/* ── Dispense button ── */
+.dispenseBtn {
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #dc2626;
+  background: #fff;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.dispenseBtn:hover {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* ── Low stock text ── */
+.lowStock {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* ── Logout button ── */
+.logoutBtn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.logoutBtn:hover {
+  background: #9f1239;
+  color: #fff;
+  border-color: #9f1239;
+}

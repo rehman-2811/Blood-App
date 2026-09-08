@@ -1,0 +1,109 @@
+/* AdminDashboard.module.css */
+.page { 
+    min-height: 100vh; 
+    background: #f9fafb; font-family: 'Segoe UI', sans-serif; 
+}
+.nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 16px 32px; 
+    background: white; 
+    border-bottom: 1px solid #e5e7eb; 
+}
+.nav h2 { 
+    margin: 0; 
+    font-size: 18px; 
+}
+.logoutBtn { 
+    padding: 8px 16px; 
+    border-radius: 8px; 
+    border: 1px solid #e5e7eb; 
+    background: white; cursor: pointer; 
+}
+.body { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 28px 20px; 
+}
+.statsRow { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px; 
+    margin-bottom: 24px; 
+}
+.statCard { 
+    background: white; 
+    border-radius: 14px; 
+    padding: 20px; 
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06); 
+}
+.statNum { 
+    font-size: 28px; 
+    font-weight: 800; 
+    margin: 0; 
+    color: #111827; 
+}
+.statLabel { 
+    font-size: 13px; 
+    color: #6b7280; 
+    margin: 4px 0 0; 
+}
+.tabs { 
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 20px; 
+}
+.tabBtn, .tabActive { 
+    padding: 9px 18px; 
+    border-radius: 8px; 
+    border: 1px solid #e5e7eb; 
+    background: white; 
+    cursor: pointer; 
+    font-size: 13px; 
+}
+.tabActive { 
+    background: #9f1239; 
+    color: white; 
+    border-color: #9f1239; 
+    font-weight: 700; 
+}
+.card { 
+    background: white; 
+    border-radius: 14px; 
+    padding: 22px; 
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06); 
+    margin-bottom: 20px; 
+}
+.card h3 { 
+    margin: 0 0 16px; 
+    font-size: 16px; 
+}
+.table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: 13px; 
+}
+.table th { 
+    text-align: left; 
+    color: #6b7280; 
+    padding-bottom: 8px; 
+    border-bottom: 1px solid #e5e7eb; 
+}
+.table td { 
+    padding: 10px 8px; 
+    border-bottom: 1px solid #f3f4f6; 
+}
+.pillBlue { 
+    background: #2563eb; 
+    color: white; 
+    padding: 2px 10px; 
+    border-radius: 99px; 
+    font-size: 11px; 
+}
+.center { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+}

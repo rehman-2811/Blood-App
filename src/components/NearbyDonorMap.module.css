@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.findBtn {
+  background: #9f1239;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.findBtn:hover {
+  background: #7f1d1d;
+}
+
+.findBtn:disabled {
+  background: #d1a3ab;
+  cursor: not-allowed;
+}
+
+.radiusLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.radiusSelect {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.errorText {
+  color: #c2173d;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.mapWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.noResults {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.popupContent {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.popupName {
+  font-weight: 700;
+  color: #111827;
+}
+
+.eligibleYes {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.eligibleNo {
+  color: #b45309;
+  font-weight: 600;
+}
+
+.popupLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.popupLinks a {
+  color: #9f1239;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.popupLinks a:hover {
+  text-decoration: underline;
+}
+.orgMarker {
+  filter: hue-rotate(180deg) saturate(1.5);
+}
+
+.reliabilityTag {
+  font-size: 11px;
+  color: #4b5563;
+}
+
+.orgAddressPopup {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.stockList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.stockPill {
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 11px;
+  color: #374151;
+}
+
+.resultsSummary {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 10px;
+  text-align: center;
+}

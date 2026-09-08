@@ -1,0 +1,51 @@
+.collaborators {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.collaborators-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.collaborator-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.collaborator-card:hover {
+  transform: translateY(-10px);
+}
+
+.collaborator-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.collaborator-name {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .collaborators-grid {
+    gap: 30px;
+  }
+  
+  .collaborator-card {
+    padding: 30px;
+    min-width: 150px;
+  }
+  
+  .collaborator-name {
+    font-size: 1.5rem;
+  }
+}

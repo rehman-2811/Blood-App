@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.footer{
+  background:#1f2c38;
+  color:#d9e1e8;
+  padding:60px 120px;
+  font-family:'Poppins', sans-serif;
+}
+
+/* Top section */
+
+.footerTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.footerLogo{
+  width:30px;
+}
+
+.donateBox{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.donateBtn{
+  background:#e4e4e4;
+  border:none;
+  padding:10px 25px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.donateBtn:hover{
+  background:#ff4757;
+  color:white;
+}
+
+/* Divider */
+
+.footer hr{
+  border:0.5px solid #394957;
+  margin:30px 0;
+}
+
+/* Content */
+
+.footerContent{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:50px;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+.newsletter h3{
+  margin-bottom:25px;
+  font-weight:500;
+}
+
+.emailBox{
+  display:flex;
+  align-items:center;
+}
+
+.emailBox input{
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #556676;
+  padding:8px;
+  color:white;
+  outline:none;
+}
+
+.arrowBtn{
+  background:#e9b9c7;
+  border:none;
+  padding:12px 18px;
+  margin-left:10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* Links */
+
+.footerLinks h4{
+  margin-bottom:15px;
+  color:#f3c6d3;
+}
+
+.footerLinks p{
+  margin:8px 0;
+  cursor:pointer;
+}
+
+/* Bottom */
+
+.footerBottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footerLegal{
+  display:flex;
+  gap:40px;
+  font-size:14px;
+}
+
+.socials i{
+  margin-left:20px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* -------- Tablet -------- */
+
+@media screen and (max-width:900px){
+
+  .footer{
+    padding:50px 40px;
+  }
+
+  .footerContent{
+    gap:30px;
+  }
+
+}
+
+/* -------- Mobile -------- */
+
+@media screen and (max-width:600px){
+
+  .footer{
+    padding:40px 20px;
+  }
+
+  .footerTop{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+  }
+
+  .footerContent{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .emailBox{
+    justify-content:center;
+  }
+
+  .footerBottom{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .footerLegal{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .socials i{
+    margin:10px;
+  }
+
+}

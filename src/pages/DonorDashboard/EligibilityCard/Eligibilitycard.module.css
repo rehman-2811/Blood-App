@@ -1,0 +1,70 @@
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.eligible {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+.notEligible {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.circleNum {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.circleLabel {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.info {
+  flex: 1;
+}
+
+.mainText {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.subText {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}

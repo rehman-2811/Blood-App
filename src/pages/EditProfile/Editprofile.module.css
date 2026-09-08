@@ -1,0 +1,193 @@
+.page {
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111827;
+}
+
+/* ── Nav ── */
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 14px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  justify-content: space-between;
+}
+
+.logo { cursor: pointer; }
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notifIcon { font-size: 20px; }
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #9f1239;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* ── Banner ── */
+.banner {
+  background: linear-gradient(135deg, #450a0a 0%, #9f1239 100%);
+  padding: 28px 40px;
+}
+
+.bannerTitle {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ── Form wrap ── */
+.formWrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 20px;
+}
+
+/* ── Org code section ── */
+.orgSection {
+  margin-top: 4px;
+}
+
+.orgLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.orgLinkedList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.orgLinkedItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fef2f2;
+  border: 1px solid #fecdd3;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.orgAddRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.orgCodeInput {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.orgCodeInput:focus {
+  border-color: #9f1239;
+}
+
+.orgAddBtn {
+  padding: 9px 18px;
+  background: #9f1239;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.orgAddBtn:hover { background: #7f1d1d; }
+
+/* ── Feedback messages ── */
+.success {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #dcfce7;
+  color: #166534;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.errorMsg {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #991b1b;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ── Submit row ── */
+.submitRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.cancelBtn {
+  padding: 11px 22px;
+  border-radius: 8px;
+  background: #fff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.cancelBtn:hover { background: #f3f4f6; }
+
+.submitBtn {
+  padding: 11px 28px;
+  border-radius: 8px;
+  background: #9f1239;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover { background: #7f1d1d; }
+.submitBtn:disabled { background: #d1a3ab; cursor: not-allowed; }

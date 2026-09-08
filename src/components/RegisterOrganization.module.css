@@ -1,0 +1,112 @@
+.org-container {
+  width: 100%;
+  margin: auto;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 100px 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.org-header {
+  background: linear-gradient(90deg, #6e002b, #c2173d);
+  color: white;
+  padding: 20px 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.org-form {
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  width: 220px;
+  font-size: 14px;
+  color: #555;
+  flex-shrink: 0;
+}
+
+/* ── All inputs, textareas AND selects share the same look ── */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fff;
+  color: #111;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #9f1239;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Disabled district dropdown when no province selected */
+.form-group select:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #c2173d;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.otp-info {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.submit-row button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #e6e6e6;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.submit-row button:hover {
+  background: #d5d5d5;
+}
+
+.submit-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.back-btn {
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+}

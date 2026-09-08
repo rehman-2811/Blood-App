@@ -1,0 +1,183 @@
+.donorContainer {
+    width: 100%;
+    margin: auto;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 100px 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.donorHeader {
+    background: linear-gradient(90deg, #6e002b, #c2173d);
+    color: white;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.donorForm {
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+.formRow {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+    margin-right: 10px;
+}
+
+.formRow input,
+.formRow textarea,
+.formRow select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.formRow textarea {
+    height: 90px;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 15px;
+}
+
+.twoCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.checkboxRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.submitRow {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitRow button {
+    padding: 10px 22px;
+    background: #e6e6e6;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submitRow button:hover {
+    background: #d5d5d5;
+}
+
+.errorMessage {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c62828;
+    font-size: 14px;
+}
+
+.successMessage {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2e7d32;
+    font-size: 14px;
+}
+
+.otpForm {
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+.otpInfo {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.otpInfo p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.contactInfo {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.contactInfo span {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.otpActions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.otpActions button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.otpActions button:first-child {
+    background: #e6e6e6;
+    color: #333;
+}
+
+.otpActions button:first-child:hover {
+    background: #d5d5d5;
+}
+
+.otpActions button:last-child {
+    background: #c2173d;
+    color: white;
+}
+
+.otpActions button:last-child:hover {
+    background: #6e002b;
+}
+
+.otpActions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
