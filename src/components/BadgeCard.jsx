@@ -7,7 +7,7 @@ export default function BadgeCard() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/badges", {
+    fetch("https://qr-server-29l8.onrender.com/api/badges", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((r) => r.json())

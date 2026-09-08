@@ -26,7 +26,7 @@ const Dashboard = () => {
     const verifyToken = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/auth/me",
+          "https://qr-server-29l8.onrender.com/api/auth/me",
           {
             headers: {
               Authorization: `Bearer ${token}`

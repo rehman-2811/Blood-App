@@ -9,7 +9,7 @@ export default function NotificationBell() {
 
   const fetchNotifications = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/notifications", {
+      const res = await fetch("https://qr-server-29l8.onrender.com/api/notifications", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -37,7 +37,7 @@ export default function NotificationBell() {
 
   const handleDismiss = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/notifications/${id}/read`, {
+      await fetch(`https://qr-server-29l8.onrender.com/api/notifications/${id}/read`, {
         method: "PUT",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -47,7 +47,7 @@ export default function NotificationBell() {
 
   const handleClearAll = async () => {
     try {
-      await fetch("http://localhost:5000/api/notifications/read-all", {
+      await fetch("https://qr-server-29l8.onrender.com/api/notifications/read-all", {
         method: "PUT",
         headers: { Authorization: `Bearer ${token}` },
       });
